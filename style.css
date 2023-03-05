@@ -1,0 +1,176 @@
+/* basic styles */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    margin: 10px;
+}
+
+button {
+    padding: 0;
+    border: 0;
+}
+
+button:focus-visible {
+    outline: none;
+}
+
+/* scoreboard styles */
+
+.scoreboard {
+    box-sizing: border-box;
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    width: 270px;
+    border: 3px solid #0000004a;
+    margin: 0 auto;
+    justify-content: space-around;
+    background-color: #BDBDBD;
+}
+
+.smile {
+    width: 26px;
+    height: 26px;
+    background-image: url('sprites.png');
+}
+
+.minutes {
+    display: flex;
+}
+
+.minutes__numbers {
+    width: 13px;
+    height: 23px;
+    background-image: url('sprites.png');
+}
+
+.minutes__zero {
+    background-position: -126px 0px;
+}
+
+.minutes__dozens {
+    background-position: -42px 0px;
+}
+
+.minutes__units {
+    background-position: -126px 0px;
+}
+
+
+.seconds {
+    display: flex;
+}
+
+.seconds__numbers {
+    width: 13px;
+    height: 23px;
+    background-image: url('sprites.png');
+    background-position: -126px 0px;
+}
+
+.smile-classic {
+    background-position: 0px -24px;
+}
+
+.smile-cool {
+    background-position: -81px -24px;
+}
+
+.smile-scared {
+    background-position: -54px -24px;
+}
+
+.smile-sad {
+    background-position: -108px -24px;
+}
+
+.smile:active {
+    background-position: -27px -24px;
+}
+
+/* field styles */
+
+.cell {
+    width: 16px;
+    height: 16px;
+    background-image: url('sprites.png');
+}
+
+.field {
+    display: grid;
+    grid-template-columns: repeat(16, 16px);
+    width: fit-content;
+    border: 7px solid #BDBDBD;
+    margin: 0 auto;
+}
+
+.default,
+.flag,
+.question-mark,
+.smile-classic {
+    cursor: pointer;
+}
+
+.default {
+    background-position: 0px -51px;
+}
+
+.flag {
+    background-position: -34px -51px;
+}
+
+.question-mark {
+    background-position: -51px -51px;
+}
+
+.bomb {
+    background-position: -85px -51px;
+}
+
+.red-bomb {
+    background-position: -102px -51px;
+}
+
+.empty-cell {
+    background-position: -17px -51px;
+}
+
+.cell-1 {
+    background-position: 0px -68px;
+}
+
+.cell-2 {
+    background-position: -17px -68px;
+}
+
+.cell-3 {
+    background-position: -34px -68px;
+}
+
+.cell-4 {
+    background-position: -51px -68px;
+}
+
+.cell-5 {
+    background-position: -68px -68px;
+}
+
+.cell-6 {
+    background-position: -85px -68px;
+}
+
+.cell-7 {
+    background-position: -102px -68px;
+}
+
+.cell-8 {
+    background-position: -119px -68px;
+}
+
+.disabled-buttons {
+    pointer-events: none;
+}
